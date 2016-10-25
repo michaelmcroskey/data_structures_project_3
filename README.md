@@ -18,37 +18,37 @@ David Mellitt (dmellitt)
 Questions
 ---------
 
-*1) What is complexity of each of the map backends (ie. Unsorted, Sorted, BST, RBTree, Treap)? For each implementation, briefly explain the best, average, and worst case complexities of inserting and searching using the particular method in terms of Big-O notation.*
+**1) What is complexity of each of the map backends (ie. Unsorted, Sorted, BST, RBTree, Treap)? For each implementation, briefly explain the best, average, and worst case complexities of inserting and searching using the particular method in terms of Big-O notation.**
 
-*UNSORTED*
-
-| Backend     | BEST   | AVG    | WORST  |
-|-------------|--------|--------|--------|
-| INSERT      | O(   ) | O(   ) | O(   ) |
-| SEARCH      | O(   ) | O(   ) | O(   ) |
-
-*SORTED*
+**UNSORTED**
 
 | Backend     | BEST   | AVG    | WORST  |
 |-------------|--------|--------|--------|
 | INSERT      | O(   ) | O(   ) | O(   ) |
 | SEARCH      | O(   ) | O(   ) | O(   ) |
 
-*BST*
+**SORTED**
 
 | Backend     | BEST   | AVG    | WORST  |
 |-------------|--------|--------|--------|
 | INSERT      | O(   ) | O(   ) | O(   ) |
 | SEARCH      | O(   ) | O(   ) | O(   ) |
 
-*RB-TREE*
+**BST**
 
 | Backend     | BEST   | AVG    | WORST  |
 |-------------|--------|--------|--------|
 | INSERT      | O(   ) | O(   ) | O(   ) |
 | SEARCH      | O(   ) | O(   ) | O(   ) |
 
-*TREAP*
+**RB-TREE**
+
+| Backend     | BEST   | AVG    | WORST  |
+|-------------|--------|--------|--------|
+| INSERT      | O(   ) | O(   ) | O(   ) |
+| SEARCH      | O(   ) | O(   ) | O(   ) |
+
+**TREAP**
 
 | Backend     | BEST   | AVG    | WORST  |
 |-------------|--------|--------|--------|
@@ -56,7 +56,7 @@ Questions
 | SEARCH      | O(   ) | O(   ) | O(   ) |
 
 
-*2) What is complexity of each of the map backends (ie. Unsorted, Sorted, BST, RBTree, Treap)? For each implementation, briefly explain the best, average, and worst case complexities of inserting and searching using the particular method in terms of Big-O notation.*
+**2) What is complexity of each of the map backends (ie. Unsorted, Sorted, BST, RBTree, Treap)? For each implementation, briefly explain the best, average, and worst case complexities of inserting and searching using the particular method in terms of Big-O notation.**
 
 | Backend     | NITEMS    | PADLENGTH | Insert Time   | Search Time   |
 |-------------|-----------|-----------|---------------|---------------|
@@ -206,7 +206,7 @@ Questions
 | TREAP       | 10000000  | 8         | 0             | 0             |
 | ----------- | --------- | --------- | ------------- | ------------- |
 
-*3) Using frequencies, compute the word count on at least three texts from Project Gutenberg using all five different backends.*
+**3) Using frequencies, compute the word count on at least three texts from Project Gutenberg using all five different backends.**
 
 | Backend     | Text                  | File Size | Elasped Time  |
 |-------------|-----------------------|-----------|---------------|
@@ -229,25 +229,25 @@ Questions
 | TREAP       | PeterPan.txt          | 0         | 0             |
 | ----------- | --------------------- | --------- | ------------- |
 
-*4) After you have performed your benchmarks:*
+**4) After you have performed your benchmarks:**
 
- - *Discuss the relative performance of each map implementation and try to explain the differences.* 
-
-
- - *What effect did NITEMS, PADLENGTH, and File Size have on the performance of each backend in your experiments?*
+ - **Discuss the relative performance of each map implementation and try to explain the differences.** 
 
 
- - *In your opinion, which map backend is the best? Justify your conclusion by examining the trade-offs for the chosen backend and based on your experimental results.* 
+ - **What effect did NITEMS, PADLENGTH, and File Size have on the performance of each backend in your experiments?**
+
+
+ - **In your opinion, which map backend is the best? Justify your conclusion by examining the trade-offs for the chosen backend and based on your experimental results.** 
 
 
 Individual Group Contributions
 ------------------------------
 
-*Michael McRoskey* (mmcrosk1): 
+**Michael McRoskey** (mmcrosk1): 
 
-*Troy Prince* (tprince): 
+**Troy Prince** (tprince): 
 
-*David Mellitt* (dmellitt):
+**David Mellitt** (dmellitt):
 
 
 
