@@ -6,6 +6,8 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+#include <map>
 
 // Type definitions ------------------------------------------------------------
 
@@ -47,6 +49,7 @@ public:
             const Entry     search(const std::string &key);
             void            dump(std::ostream &os, DumpFlag flag);
 private:
+            std::vector<Entry> entries;
 };
 
 class SortedMap : public Map {
@@ -55,6 +58,7 @@ public:
             const Entry     search(const std::string &key);
             void            dump(std::ostream &os, DumpFlag flag);
 private:
+            std::vector<Entry> entries;
 };
 
 class BSTMap : public Map {
