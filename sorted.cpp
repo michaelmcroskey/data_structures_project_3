@@ -19,20 +19,20 @@ const Entry     binary_search(const IT &start, const IT &end, const std::string 
 
 void            SortedMap::insert(const std::string &key, const std::string &value) {
     
-    
-    
-    Entry a(key, value);
-    IT it = entries.begin();
-    
-    if (entries.size()==0){
-        entries.insert(it, a);
-    } else {
-        while(it->first < key){
-            it++;
-            std::cout << "in here"<< std::endl;
+    for (auto& i : entries){
+        if (i.first == key){
+            i.second = value;
+            return;
         }
-        entries.insert(it, a);
+        if (i.first > key ){
+            Entry a(key, value);
+            entries.push_back(a);
+            std::sort(entries.begin(), entries.end());
+            return;
+        }
     }
+    Entry a(key, value);
+    entries.push_back(a);
 }
 
 const Entry     SortedMap::search(const std::string &key) {
