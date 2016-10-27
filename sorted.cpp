@@ -1,46 +1,36 @@
 // sorted.cpp: Sorted Map
-
 #include "map.h"
-
 #include <algorithm>
 #include <vector>
 #include <iterator>
 #include <string>
-
 // Type Definitions ------------------------------------------------------------
-
 typedef std::vector<Entry>::iterator IT;
-
 // Prototypes ------------------------------------------------------------------
-
 const Entry     binary_search(const IT &start, const IT &end, const std::string &key);
-
 // Methods ---------------------------------------------------------------------
-
 void            SortedMap::insert(const std::string &key, const std::string &value) {
     
-    
-    
-    Entry a(key, value);
-    IT it = entries.begin();
-    
-    if (entries.size()==0){
-        entries.insert(it, a);
-    } else {
-        while(it->first < key){
-            it++;
-            std::cout << "in here"<< std::endl;
+    for (auto& i : entries){
+        if (i.first == key){
+            i.second = value;
+            return;
         }
-        entries.insert(it, a);
+        if (i.first > key ){
+            Entry a(key, value);
+            entries.push_back(a);
+            std::sort(entries.begin(), entries.end());
+            return;
+        }
     }
+    Entry a(key, value);
+    entries.push_back(a);
 }
-
 const Entry     SortedMap::search(const std::string &key) {
     
     return binary_search(entries.begin(), entries.end(), key);
     
 }
-
 void            SortedMap::dump(std::ostream &os, DumpFlag flag) {
     
     for (auto i : entries){
@@ -55,9 +45,7 @@ void            SortedMap::dump(std::ostream &os, DumpFlag flag) {
         }
     }
 }
-
 // Internal Functions ----------------------------------------------------------
-
 const Entry   binary_search(const IT &start, const IT &end, const std::string &target) {
    
 //    auto lower = std::lower_bound(start, end, target);
@@ -72,11 +60,9 @@ const Entry   binary_search(const IT &start, const IT &end, const std::string &t
     
     return NONE;
 }
-
 void padTo(std::string &str, const size_t num, const char paddingChar = ' ')
 {
     if(num > str.size())
     	str.insert(0, num - str.size(), paddingChar);
 }
-
 // vim: set sts=4 sw=4 ts=8 expandtab ft=cpp:
