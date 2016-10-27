@@ -75,6 +75,7 @@ public:
             const Entry     search(const std::string &key);
             void            dump(std::ostream &os, DumpFlag flag);
 private:
+            std::map<std::string, std::string> entries;
 };
 
 class TreapMap : public Map {
