@@ -20,9 +20,9 @@ void            RBTreeMap::insert(const std::string &key, const std::string &val
 
 const Entry     RBTreeMap::search(const std::string &key) {
     for(auto i : entries)
-        if (i.first == key){
+        if (i.first == key)
             return i;
-        }
+            
     return NONE;
 }
 
