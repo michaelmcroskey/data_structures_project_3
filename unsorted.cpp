@@ -6,7 +6,7 @@
 // Methods --------------------------------------------------------------------
 
 void            UnsortedMap::insert(const std::string &key, const std::string &value) {
-    for (auto i : entries){
+    for (auto& i : entries){
         if (i.first == key){
             i.second = value;
             return;
@@ -17,10 +17,11 @@ void            UnsortedMap::insert(const std::string &key, const std::string &v
 }
 
 const Entry     UnsortedMap::search(const std::string &key) {
-    
+
     for(auto i : entries)
-        if (i.first == key)
+        if (i.first == key){
             return i;
+        }
     
     return NONE;
 }
@@ -33,7 +34,7 @@ void            UnsortedMap::dump(std::ostream &os, DumpFlag flag) {
         } else if (flag == DUMP_VALUE){
             os << i.second << std::endl;
         } else if (flag == DUMP_KEY_VALUE){
-            os << i.first << "/t" << i.first << std::endl;
+            os << i.first << "/t" << i.second << std::endl;
         } else if (flag == DUMP_VALUE_KEY){
             os << i.second << "/t" << i.first << std::endl;
         }
@@ -41,3 +42,4 @@ void            UnsortedMap::dump(std::ostream &os, DumpFlag flag) {
 }
 
 // vim: set sts=4 sw=4 ts=8 expandtab ft=cpp:
+
