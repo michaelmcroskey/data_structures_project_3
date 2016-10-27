@@ -48,15 +48,17 @@ void            SortedMap::dump(std::ostream &os, DumpFlag flag) {
 // Internal Functions ----------------------------------------------------------
 const Entry   binary_search(const IT &start, const IT &end, const std::string &target) {
    
-//    auto lower = std::lower_bound(start, end, target);
-//    bool cmp = target < lower->first;
-//    
-//    if (!(lower == end) && !cmp){
-//        Entry a(lower->first, lower->second);
-//        return a;
-//    } else {
-//        return NONE;
-//    }
+    IT left = start;
+    IT right = end;
+    
+    while(left <= right){
+        Entry a = *((left+right)/2)
+        if(a.first < target.first)
+            left = (left+right)/2+1;
+        else if(a.first > target.first)
+            right = (left+right)/2-1;
+        else
+            return a;
     
     return NONE;
 }
