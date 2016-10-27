@@ -39,9 +39,9 @@ void            SortedMap::dump(std::ostream &os, DumpFlag flag) {
         } else if (flag == DUMP_VALUE){
             os << i.second << std::endl;
         } else if (flag == DUMP_KEY_VALUE){
-            os << i.first << "/t" << i.second << std::endl;
+            os << i.first << "\t" << i.second << std::endl;
         } else if (flag == DUMP_VALUE_KEY){
-            os << i.second << "/t" << i.first << std::endl;
+            os << i.second << "\t" << i.first << std::endl;
         }
     }
 }

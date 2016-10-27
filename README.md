@@ -243,7 +243,7 @@ Questions
 Individual Group Contributions
 ------------------------------
 
-**Michael McRoskey** (mmcrosk1): 
+**Michael McRoskey** (mmcrosk1): Implemented frequencies.cpp, map_bench.cpp, rbtree.cpp, unsorted.cpp. Worked on sorted.cpp and README.md.
 
 **Troy Prince** (tprince): 
 
