@@ -29,8 +29,19 @@ extern const Entry NONE;
 struct Node {
     Entry entry;
     int     priority;
-    Node    *left;
-    Node    *right;
+    Node    *left = NULL;
+    Node    *right = NULL;
+
+    Node( const std::string &key, const std::string &value, const int p ) {
+        entry.first  = key;
+        entry.second = value;
+        priority = p;
+    }
+
+    ~Node() {
+        if(left)  delete left;
+        if(right) delete right;
+    }
 };
 
 // Classes ---------------------------------------------------------------------
@@ -63,10 +74,12 @@ private:
 
 class BSTMap : public Map {
 public:
+            ~BSTMap() { delete root; };
             void            insert(const std::string &key, const std::string &value);
             const Entry     search(const std::string &key);
             void            dump(std::ostream &os, DumpFlag flag);
 private:
+            Node *root;
 };
 
 class RBTreeMap : public Map {
@@ -80,10 +93,12 @@ private:
 
 class TreapMap : public Map {
 public:
+            ~TreapMap() { delete root; };
             void            insert(const std::string &key, const std::string &value);
             const Entry     search(const std::string &key);
             void            dump(std::ostream &os, DumpFlag flag);
 private:
+            Node *root;
 };
 
 // vim: set sts=4 sw=4 ts=8 expandtab ft=cpp:

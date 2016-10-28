@@ -30,8 +30,8 @@ void parse_command_line_options(int argc, char *argv[], Map *&map, int *NITEMS, 
                     map = new UnsortedMap();
                 } else if (strcasecmp(optarg, "sorted") == 0) {
                     map = new SortedMap();
-//                } else if (strcasecmp(optarg, "bst") == 0) {
-//                    map = new BSTMap();
+                } else if (strcasecmp(optarg, "bst") == 0) {
+                    map = new BSTMap();
                 } else if (strcasecmp(optarg, "rbtree") == 0) {
                     map = new RBTreeMap();
 //                } else if (strcasecmp(optarg, "treap") == 0) {
