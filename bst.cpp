@@ -34,10 +34,12 @@ void            BSTMap::dump(std::ostream &os, DumpFlag flag) {
 Node *insert_r(Node *node, const std::string &key, const std::string &value) {
     if(!node)
         node = new Node(key, value, 0);
-    else if( key <= node->entry.first )
+    else if( key < node->entry.first )
         node->left = insert_r(node->left, key, value);
-    else
+    else if( key > node->entry.first )
         node->right = insert_r(node->right, key, value);
+    else
+        node->entry.second = value;
 
     return node;
 }

@@ -28,14 +28,14 @@ void parse_command_line_options(int argc, char *argv[], Map *&map, DumpFlag &fla
             case 'b':
                 if (strcasecmp(optarg, "unsorted") == 0) {
                         map = new UnsortedMap();
-//                } else if (strcasecmp(optarg, "sorted") == 0) {
-//                    map = new SortedMap();
-//                } else if (strcasecmp(optarg, "bst") == 0) {
-//                    map = new BSTMap();
+                } else if (strcasecmp(optarg, "sorted") == 0) {
+                    map = new SortedMap();
+                } else if (strcasecmp(optarg, "bst") == 0) {
+                    map = new BSTMap();
                 } else if (strcasecmp(optarg, "rbtree") == 0) {
                         map = new RBTreeMap();
-//                } else if (strcasecmp(optarg, "treap") == 0) {
-//                    map = new TreapMap();
+                } else if (strcasecmp(optarg, "treap") == 0) {
+                    map = new TreapMap();
                 } else {
                         usage(1);
                 }
@@ -63,17 +63,15 @@ void parse_command_line_options(int argc, char *argv[], Map *&map, DumpFlag &fla
         }
     }
 
-    if (map == nullptr) {
+    if (map == nullptr) 
         	map = new UnsortedMap();
-        flag = DUMP_VALUE_KEY;
-    }
 }
 
 // Main execution --------------------------------------------------------------
 
 int main(int argc, char *argv[]) {
     Map *map = nullptr;
-    DumpFlag flag;
+    DumpFlag flag = DUMP_VALUE_KEY;;
     
     parse_command_line_options(argc, argv, map, flag);
     

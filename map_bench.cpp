@@ -34,8 +34,8 @@ void parse_command_line_options(int argc, char *argv[], Map *&map, int *NITEMS, 
                     map = new BSTMap();
                 } else if (strcasecmp(optarg, "rbtree") == 0) {
                     map = new RBTreeMap();
-//                } else if (strcasecmp(optarg, "treap") == 0) {
-//                    map = new TreapMap();
+                } else if (strcasecmp(optarg, "treap") == 0) {
+                    map = new TreapMap();
                 } else {
                     usage(1);
                 }

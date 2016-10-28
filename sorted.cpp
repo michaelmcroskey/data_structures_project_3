@@ -27,8 +27,10 @@ void            SortedMap::insert(const std::string &key, const std::string &val
     entries.push_back(a);
 }
 const Entry     SortedMap::search(const std::string &key) {
-    
-    return binary_search(entries.begin(), entries.end(), key);
+    if(entries.size() > 0)   
+        return binary_search(entries.begin(), entries.end(), key);
+
+    return NONE;
     
 }
 void            SortedMap::dump(std::ostream &os, DumpFlag flag) {
@@ -47,9 +49,10 @@ void            SortedMap::dump(std::ostream &os, DumpFlag flag) {
 }
 // Internal Functions ----------------------------------------------------------
 const Entry   binary_search(const IT &start, const IT &end, const std::string &target) {
-   
+
     IT left = start;
     IT right = end;
+    right--;
     
     while(left <= right){
         IT temp = left;
@@ -61,14 +64,9 @@ const Entry   binary_search(const IT &start, const IT &end, const std::string &t
             right = --temp;
         else
             return a;
-    }
+    }printf("4\n");
     
     return NONE;
 }
 
-/*void padTo(std::string &str, const size_t num, const char paddingChar = ' ')
-{
-    if(num > str.size())
-    	str.insert(0, num - str.size(), paddingChar);
-}*/
 // vim: set sts=4 sw=4 ts=8 expandtab ft=cpp:
