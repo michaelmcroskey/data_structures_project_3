@@ -52,19 +52,23 @@ const Entry   binary_search(const IT &start, const IT &end, const std::string &t
     IT right = end;
     
     while(left <= right){
-        Entry a = *((left+right)/2)
-        if(a.first < target.first)
-            left = (left+right)/2+1;
-        else if(a.first > target.first)
-            right = (left+right)/2-1;
+        IT temp = left;
+        std::advance(temp,std::distance(left,right)/2);
+        Entry a = *(temp);
+        if(a.first < target)
+            left = ++temp;
+        else if(a.first > target)
+            right = --temp;
         else
             return a;
+    }
     
     return NONE;
 }
-void padTo(std::string &str, const size_t num, const char paddingChar = ' ')
+
+/*void padTo(std::string &str, const size_t num, const char paddingChar = ' ')
 {
     if(num > str.size())
     	str.insert(0, num - str.size(), paddingChar);
-}
+}*/
 // vim: set sts=4 sw=4 ts=8 expandtab ft=cpp:
