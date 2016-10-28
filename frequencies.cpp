@@ -70,6 +70,7 @@ void parse_command_line_options(int argc, char *argv[], Map *&map, DumpFlag &fla
 // Main execution --------------------------------------------------------------
 
 int main(int argc, char *argv[]) {
+    //inserts words into map that counts word appearences
     Map *map = nullptr;
     DumpFlag flag = DUMP_VALUE_KEY;;
     
@@ -80,10 +81,12 @@ int main(int argc, char *argv[]) {
     while(std::cin >> word){
         auto result = map->search(word);
         if(result != NONE){
+	    //increment count if word is already in map
             int count = std::stoi(result.second);
             count++;
             map->insert(word, std::to_string(count));
         } else {    
+	    //add word and 1 to map if word was not already in map
             map->insert(word, "1");
         }
     }

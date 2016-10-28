@@ -4,10 +4,13 @@
 #include <vector>
 #include <iterator>
 #include <string>
+
 // Type Definitions ------------------------------------------------------------
 typedef std::vector<Entry>::iterator IT;
+
 // Prototypes ------------------------------------------------------------------
 const Entry     binary_search(const IT &start, const IT &end, const std::string &key);
+
 // Methods ---------------------------------------------------------------------
 void            SortedMap::insert(const std::string &key, const std::string &value) {
     
@@ -47,6 +50,7 @@ void            SortedMap::dump(std::ostream &os, DumpFlag flag) {
         }
     }
 }
+
 // Internal Functions ----------------------------------------------------------
 const Entry   binary_search(const IT &start, const IT &end, const std::string &target) {
 
@@ -64,9 +68,10 @@ const Entry   binary_search(const IT &start, const IT &end, const std::string &t
             right = --temp;
         else
             return a;
-    }printf("4\n");
+    }
     
     return NONE;
 }
+
 
 // vim: set sts=4 sw=4 ts=8 expandtab ft=cpp:
