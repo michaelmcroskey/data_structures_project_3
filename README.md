@@ -81,13 +81,13 @@ Questions
 | UNSORTED    | 100000    | 4         | 163.084       | 258.539       |
 | UNSORTED    | 1000000   | 4         |   INFINITY    |     N/A       |
 | UNSORTED    | 10000000  | 4         |   INFINITY    |     N/A       |
-| UNSORTED    | 10        | 8         | 0             | 0             |
-| UNSORTED    | 100       | 8         | 0             | 0             |
-| UNSORTED    | 1000      | 8         | 0             | 0             |
-| UNSORTED    | 10000     | 8         | 0             | 0             |
-| UNSORTED    | 100000    | 8         | 0             | 0             |
-| UNSORTED    | 1000000   | 8         | 0             | 0             |
-| UNSORTED    | 10000000  | 8         | 0             | 0             |
+| UNSORTED    | 10        | 8         |    .0000563   |    .0000102   |
+| UNSORTED    | 100       | 8         |    .000311    |    .000392    |
+| UNSORTED    | 1000      | 8         |    .0263      |    .0345      |
+| UNSORTED    | 10000     | 8         |   2.261       |   3.2805      |
+| UNSORTED    | 100000    | 8         | 214.553       | 309.796       |
+| UNSORTED    | 1000000   | 8         |   INFINITY    |     N/A       |
+| UNSORTED    | 10000000  | 8         |   INFINITY    |     N/A       |
 |-------------|-----------|-----------|---------------|---------------|
 | SORTED      | 10        | 1         |   .0000387    |   .000011625  |
 | SORTED      | 100       | 1         |   .001787     |   .0001246    |
@@ -110,13 +110,13 @@ Questions
 | SORTED      | 100000    | 4         |   INFINITY    |     N/A       |
 | SORTED      | 1000000   | 4         |   INFINITY    |     N/A       |
 | SORTED      | 10000000  | 4         |   INFINITY    |     N/A       |
-| SORTED      | 10        | 8         | 0             | 0             |
-| SORTED      | 100       | 8         | 0             | 0             |
-| SORTED      | 1000      | 8         | 0             | 0             |
-| SORTED      | 10000     | 8         | 0             | 0             |
-| SORTED      | 100000    | 8         | 0             | 0             |
-| SORTED      | 1000000   | 8         | 0             | 0             |
-| SORTED      | 10000000  | 8         | 0             | 0             |
+| SORTED      | 10        | 8         |   .0000372    |   .0000128    |
+| SORTED      | 100       | 8         |   .000572     |   .0000958    |
+| SORTED      | 1000      | 8         |   .0488       |   .00126      |
+| SORTED      | 10000     | 8         |  4.392        |   .0159             |
+| SORTED      | 100000    | 8         |   INFINITY    |     N/A       |
+| SORTED      | 1000000   | 8         |   INFINITY    |     N/A       |
+| SORTED      | 10000000  | 8         |   INFINITY    |     N/A       |
 | ----------- | --------- | --------- | ------------- | ------------- |
 | BST         | 10        | 1         |    .00002723  |    .00000898  |
 | BST         | 100       | 1         |    .0001158   |    .0000853   |
@@ -168,13 +168,13 @@ Questions
 | RB-TREE     | 100000    | 4         | 262.367       | 455.838       |
 | RB-TREE     | 1000000   | 4         |   INFINITY    |     N/A       |
 | RB-TREE     | 10000000  | 4         |   INFINITY    |     N/A       |
-| RB-TREE     | 10        | 8         | 0             | 0             |
-| RB-TREE     | 100       | 8         | 0             | 0             |
-| RB-TREE     | 1000      | 8         | 0             | 0             |
-| RB-TREE     | 10000     | 8         | 0             | 0             |
-| RB-TREE     | 100000    | 8         | 0             | 0             |
-| RB-TREE     | 1000000   | 8         | 0             | 0             |
-| RB-TREE     | 10000000  | 8         | 0             | 0             |
+| RB-TREE     | 10        | 8         |    .0000391   |    .0000180   |
+| RB-TREE     | 100       | 8         |    .000479    |    .000481    |
+| RB-TREE     | 1000      | 8         |    .0344      |    .0424      |
+| RB-TREE     | 10000     | 8         |   3.072       |   4.031       |
+| RB-TREE     | 100000    | 8         | 308.958       | 464.768       |
+| RB-TREE     | 1000000   | 8         |   INFINITY    |     N/A       |
+| RB-TREE     | 10000000  | 8         |   INFINITY    |     N/A       |
 | ----------- | --------- | --------- | ------------- | ------------- |
 | TREAP       | 10        | 1         |     .0001235  |     .0000085  |
 | TREAP       | 100       | 1         |     .007969   |     .0000793  |
@@ -190,43 +190,43 @@ Questions
 | TREAP       | 100000    | 2         |     .745      |     .172      |
 | TREAP       | 1000000   | 2         |    7.894      |    2.053      |
 | TREAP       | 10000000  | 2         |   84.346      |   24.635      |
-| TREAP       | 10        | 4         | 0             | 0             |
-| TREAP       | 100       | 4         | 0             | 0             |
-| TREAP       | 1000      | 4         | 0             | 0             |
-| TREAP       | 10000     | 4         | 0             | 0             |
-| TREAP       | 100000    | 4         | 0             | 0             |
-| TREAP       | 1000000   | 4         | 0             | 0             |
-| TREAP       | 10000000  | 4         | 0             | 0             |
-| TREAP       | 10        | 8         | 0             | 0             |
-| TREAP       | 100       | 8         | 0             | 0             |
-| TREAP       | 1000      | 8         | 0             | 0             |
-| TREAP       | 10000     | 8         | 0             | 0             |
-| TREAP       | 100000    | 8         | 0             | 0             |
-| TREAP       | 1000000   | 8         | 0             | 0             |
-| TREAP       | 10000000  | 8         | 0             | 0             |
+| TREAP       | 10        | 4         |    0.000105   |    0.00000973 |
+| TREAP       | 100       | 4         |    0.000764   |    0.0000956  |
+| TREAP       | 1000      | 4         |    0.00718    |    0.00117    |
+| TREAP       | 10000     | 4         |    0.0684     |    0.0142     |
+| TREAP       | 100000    | 4         |    0.749      |    0.174      |
+| TREAP       | 1000000   | 4         |    8.322      |    2.107      |
+| TREAP       | 10000000  | 4         |   83.713      |   24.636      |
+| TREAP       | 10        | 8         |    .000140    |    .0000151   |
+| TREAP       | 100       | 8         |    .000638    |    .0000842   |
+| TREAP       | 1000      | 8         |    .00634     |    .00106     |
+| TREAP       | 10000     | 8         |    .0705      |    .0145      |
+| TREAP       | 100000    | 8         |    .715       |    .181       |
+| TREAP       | 1000000   | 8         |   7.511       |   2.204       |
+| TREAP       | 10000000  | 8         |  76.807       |  25.250       |
 | ----------- | --------- | --------- | ------------- | ------------- |
 
 **3) Using frequencies, compute the word count on at least three texts from Project Gutenberg using all five different backends.**
 
-| Backend     | Text                  | File Size | Elasped Time  |
+| Backend     | Text                  | File Size | Elapsed Time  |
 |-------------|-----------------------|-----------|---------------|
-| UNSORTED    | Beowulf.txt           | 0         | 0             |
-| SORTED      | Beowulf.txt           | 0         | 0             |
-| BST         | Beowulf.txt           | 0         | 0             |
-| RB-TREE     | Beowulf.txt           | 0         | 0             |
-| TREAP       | Beowulf.txt           | 0         | 0             |
+| UNSORTED    | Beowulf.txt           | 294K      |  7.796        |
+| SORTED      | Beowulf.txt           | -         | 65.680        |
+| BST         | Beowulf.txt           | -         |  0.193        |
+| RB-TREE     | Beowulf.txt           | -         | 23.320        |
+| TREAP       | Beowulf.txt           | -         |  0.227        |
 | ----------- | --------------------- | --------- | ------------- |
-| UNSORTED    | TheJungleBook.txt     | 0         | 0             |
-| SORTED      | TheJungleBook.txt     | 0         | 0             |
-| BST         | TheJungleBook.txt     | 0         | 0             |
-| RB-TREE     | TheJungleBook.txt     | 0         | 0             |
-| TREAP       | TheJungleBook.txt     | 0         | 0             |
+| UNSORTED    | TheJungleBook.txt     | 297K      |  6.155        |
+| SORTED      | TheJungleBook.txt     | -         | 46.603        |
+| BST         | TheJungleBook.txt     | -         |  0.219        |
+| RB-TREE     | TheJungleBook.txt     | -         | 20.081        |
+| TREAP       | TheJungleBook.txt     | -         |  0.250        |
 | ----------- | --------------------- | --------- | ------------- |
-| UNSORTED    | PeterPan.txt          | 0         | 0             |
-| SORTED      | PeterPan.txt          | 0         | 0             |
-| BST         | PeterPan.txt          | 0         | 0             |
-| RB-TREE     | PeterPan.txt          | 0         | 0             |
-| TREAP       | PeterPan.txt          | 0         | 0             |
+| UNSORTED    | PeterPan.txt          | 285K      |  5.456        |
+| SORTED      | PeterPan.txt          | -         | 43.566        |
+| BST         | PeterPan.txt          | -         |  0.202        |
+| RB-TREE     | PeterPan.txt          | -         | 18.806        |
+| TREAP       | PeterPan.txt          | -         |  0.238        |
 | ----------- | --------------------- | --------- | ------------- |
 
 **4) After you have performed your benchmarks:**
@@ -245,10 +245,6 @@ Individual Group Contributions
 
 **Michael McRoskey** (mmcrosk1): Implemented frequencies.cpp, map_bench.cpp, rbtree.cpp, unsorted.cpp. Worked on sorted.cpp and README.md.
 
-**Troy Prince** (tprince): Worked a little on the programs but did most of the README (including running all the backends for all the different values of n and p) 
+**Troy Prince** (tprince): Worked on frequencies, sorted, did most of the README (including running all the backends for all the different values of n and p) 
 
-**David Mellitt** (dmellitt): A lot of the code and quite a bit of the README.
-
-
-
-
+**David Mellitt** (dmellitt): Worked on sorted, bst, treap, README.
