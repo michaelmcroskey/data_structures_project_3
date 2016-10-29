@@ -8,20 +8,15 @@
 // Methods --------------------------------------------------------------------
 
 void            RBTreeMap::insert(const std::string &key, const std::string &value) {
-    for (auto& i : entries){
-        if (i.first == key){
-            i.second = value;
-            return;
-        }
-    }
     Entry a(key, value);
-    entries.insert(a);
+    auto in = entries.insert(a);
+    (*in.first).second = value;
 }
 
 const Entry     RBTreeMap::search(const std::string &key) {
-    for(auto i : entries)
-        if (i.first == key)
-            return i;
+    auto it = entries.find(key);
+    if(it != entries.end())
+        return *it;
             
     return NONE;
 }

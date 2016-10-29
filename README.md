@@ -147,34 +147,34 @@ Questions
 | BST         | 1000000   | 8         |   INFINTIY    |     N/A       |
 | BST         | 10000000  | 8         |   INFINTIY    |     N/A       |
 | ----------- | --------- | --------- | ------------- | ------------- |
-| RB-TREE     | 10        | 1         |     .0000419  |    .00002055  |
-| RB-TREE     | 100       | 1         |     .0004916  |    .0006208   |
-| RB-TREE     | 1000      | 1         |     .03857    |    .05547     |
-| RB-TREE     | 10000     | 1         |    4.14356    |   5.78877     |
-| RB-TREE     | 100000    | 1         | 481.177       | 611.944       |
-| RB-TREE     | 1000000   | 1         |   INFINITY    |      N/A      |
-| RB-TREE     | 10000000  | 1         |   INFINITY    |   INFINITY    |
-| RB-TREE     | 10        | 2         |     .0000636  |    .00000742  |
-| RB-TREE     | 100       | 2         |     .000419   |    .000385    |
-| RB-TREE     | 1000      | 2         |     .0275     |    .0345      |
-| RB-TREE     | 10000     | 2         |    2.562      |   3.450       |
-| RB-TREE     | 100000    | 2         |  271.579      | 361.507       |
-| RB-TREE     | 1000000   | 2         |   INFINITY    |      N/A      |
-| RB-TREE     | 10000000  | 2         |   INFINITY    |      N/A      |
-| RB-TREE     | 10        | 4         |     .0000925  |    .00000848  |
-| RB-TREE     | 100       | 4         |     .000472   |    .000649    |
-| RB-TREE     | 1000      | 4         |     .0311     |    .0363      |
-| RB-TREE     | 10000     | 4         |    2.668      |   3.491       |
-| RB-TREE     | 100000    | 4         | 262.367       | 455.838       |
-| RB-TREE     | 1000000   | 4         |   INFINITY    |     N/A       |
-| RB-TREE     | 10000000  | 4         |   INFINITY    |     N/A       |
-| RB-TREE     | 10        | 8         |    .0000391   |    .0000180   |
-| RB-TREE     | 100       | 8         |    .000479    |    .000481    |
-| RB-TREE     | 1000      | 8         |    .0344      |    .0424      |
-| RB-TREE     | 10000     | 8         |   3.072       |   4.031       |
-| RB-TREE     | 100000    | 8         | 308.958       | 464.768       |
-| RB-TREE     | 1000000   | 8         |   INFINITY    |     N/A       |
-| RB-TREE     | 10000000  | 8         |   INFINITY    |     N/A       |
+| RB-TREE     | 10        | 1         |     .0000250  |    .0000108   |
+| RB-TREE     | 100       | 1         |     .000127   |    .0000669   |
+| RB-TREE     | 1000      | 1         |     .00158    |    .000845    |
+| RB-TREE     | 10000     | 1         |     .0217     |    .0103      |
+| RB-TREE     | 100000    | 1         |     .249      |    .121       |
+| RB-TREE     | 1000000   | 1         |    2.935      |   1.388       |
+| RB-TREE     | 10000000  | 1         |   33.942      | 15.6531       |
+| RB-TREE     | 10        | 2         |     .0000305  |    .00000819  |
+| RB-TREE     | 100       | 2         |     .000164   |    .0000673   |
+| RB-TREE     | 1000      | 2         |     .00159    |    .000822    |
+| RB-TREE     | 10000     | 2         |     .0217     |    .0103      |
+| RB-TREE     | 100000    | 2         |     .249      |    .122       |
+| RB-TREE     | 1000000   | 2         |    2.936      |   1.378       |
+| RB-TREE     | 10000000  | 2         |   34.066      |  15.651       |
+| RB-TREE     | 10        | 4         |     .0000302  |    .00000775  |
+| RB-TREE     | 100       | 4         |     .000379   |    .000163    |
+| RB-TREE     | 1000      | 4         |     .00192    |    .000872    |
+| RB-TREE     | 10000     | 4         |     .0261     |    .0100      |
+| RB-TREE     | 100000    | 4         |     .227      |    .120       |
+| RB-TREE     | 1000000   | 4         |    3.051      |   1.378       |
+| RB-TREE     | 10000000  | 4         |   33.532      |  15.620       |
+| RB-TREE     | 10        | 8         |    .0000313   |    .00000821  |
+| RB-TREE     | 100       | 8         |    .000146    |    .0000822   |
+| RB-TREE     | 1000      | 8         |    .00190     |    .000910    |
+| RB-TREE     | 10000     | 8         |    .0271      |    .0107      |
+| RB-TREE     | 100000    | 8         |    .319       |    .123       |
+| RB-TREE     | 1000000   | 8         |   3.818       |   1.380       |
+| RB-TREE     | 10000000  | 8         |  44.257       |  15.357       |
 | ----------- | --------- | --------- | ------------- | ------------- |
 | TREAP       | 10        | 1         |     .0001235  |     .0000085  |
 | TREAP       | 100       | 1         |     .007969   |     .0000793  |
@@ -213,19 +213,19 @@ Questions
 | UNSORTED    | Beowulf.txt           | 294K      |  7.796        |
 | SORTED      | Beowulf.txt           | -         | 65.680        |
 | BST         | Beowulf.txt           | -         |  0.193        |
-| RB-TREE     | Beowulf.txt           | -         | 23.320        |
+| RB-TREE     | Beowulf.txt           | -         |  0.253        |
 | TREAP       | Beowulf.txt           | -         |  0.227        |
 | ----------- | --------------------- | --------- | ------------- |
 | UNSORTED    | TheJungleBook.txt     | 297K      |  6.155        |
 | SORTED      | TheJungleBook.txt     | -         | 46.603        |
 | BST         | TheJungleBook.txt     | -         |  0.219        |
-| RB-TREE     | TheJungleBook.txt     | -         | 20.081        |
+| RB-TREE     | TheJungleBook.txt     | -         |  0.262        |
 | TREAP       | TheJungleBook.txt     | -         |  0.250        |
 | ----------- | --------------------- | --------- | ------------- |
 | UNSORTED    | PeterPan.txt          | 285K      |  5.456        |
 | SORTED      | PeterPan.txt          | -         | 43.566        |
 | BST         | PeterPan.txt          | -         |  0.202        |
-| RB-TREE     | PeterPan.txt          | -         | 18.806        |
+| RB-TREE     | PeterPan.txt          | -         |  0.252        |
 | TREAP       | PeterPan.txt          | -         |  0.238        |
 | ----------- | --------------------- | --------- | ------------- |
 
@@ -233,11 +233,35 @@ Questions
 
  - **Discuss the relative performance of each map implementation and try to explain the differences.** 
 
+UNSORTED: Fairly slow, benchmark for -n 10000 -p 1 took a few seconds for both operations. Insertion and search
+          may look through every element, O(n).
+          
+SORTED:   Slowest. For benchmark -n 10000 -p 1 took less than a tenth of a second to search, but over
+          45 seconds to insert. Binary search is fast, but sorting takes too long.
+          
+BST:      Pretty fast. Less than 0.02 sec each for bench -n 10000 -p 1. Vulnerable to
+          padding.
+
+RBTREE:   Fastest in benchmarks, best backend as n increases due to self-balancing. Slower than treap
+          and bst for books. Books may be random enough that self balancing is not worth it.
+
+TREAP:    Slower than BST without padding, much faster with padding.
 
  - **What effect did NITEMS, PADLENGTH, and File Size have on the performance of each backend in your experiments?**
 
+NITEMS had the expected effect when looking at each backend's complexity.
+
+Padding hurt BST since padded numbers group to one side of non-padded numbers, distancing the root from
+many numbers. For the other backends, padding seemed to help up until a certain point (best around 4).
+
+Smaller file size seemed to speed up every backend but BST. Peter Pan was smallest and had the shortest time
+for these. However, Beowulf was not the largest file but was slowest on every backend but BST. This could
+be due to a greater range of vocabulary, which would benefit BST and hurt trees that self balance.
 
  - **In your opinion, which map backend is the best? Justify your conclusion by examining the trade-offs for the chosen backend and based on your experimental results.** 
+
+rbtree. It was very slightly slower than others with the books due to self balancing, but dominated the benchmarks
+because of its better worst-case complexity.
 
 
 Individual Group Contributions
